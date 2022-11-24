@@ -1,0 +1,164 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Coca-cola Survey</title>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="/"><img src="/static/imgs/lagatipp.png" alt="logo"></a>
+            <a href="/" style="font-family: 'Lato' , sans-serif; font-weight: 400;
+            font-size: 30px;
+            line-height: 36px; height: 40%;
+            color: #FFFFFF; text-decoration: none;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"> Analytical Survey </a>
+        </div>
+        <div>
+            <a href="#" class="previous" onclick="history.back()"><img src="/static/imgs/Vector 12.png" alt="previous"></a>
+        </div>
+    </header>
+    <form action="/Colaform" method="post">
+        <div class="form">
+        
+            <ul>
+                <li><p> Сколько вам лет? </p></li>
+                <input type="text" name="Age" min="3" max="99" required>
+        
+                <li><p> Пол </p></li>
+                <input type="radio"  name="sex" value="male"><label for="male">Мужской</label><br>
+                <input type="radio"  name="sex" value="female"><label for="female">Женский</label><br>
+                <input type="radio"  name="sex" value="other"><label for="other">Другое</label>
+        
+                <li><p>Какие напитки компаний Coca-Cola вы пьете?</p></li>
+                <input type="checkbox" name="3-Coca-Cola" value="1"><label for="Coca-Cola">Coca-Cola</label>
+                <input type="checkbox" name="3-Coca-Cola Zero" value="1" ><label for="Coca-Cola Zero">Coca-Cola Zero</label>
+                <input type="checkbox" name="3-Fanta" value="1"><label for="Fanta">Fanta</label>
+                <input type="checkbox" name="3-Sprite" value="1" ><label for="Sprite">Sprite</label>
+                <input type="checkbox" name="3-Schweppes" value="1" ><label for="Schweppes">Schweppes</label>
+                <input type="checkbox" name="3-Bonaqua" value = "1"><label for="Bonaqua">Bonaqua</label>
+                <input type="checkbox" name="3-Fuse tea" value = '1' ><label for="Fuse tea">Fuse tea</label>
+        
+        
+                <li><p>Какого обьема напитка вы предпочитаете(литр)?</p></li>
+                <input type="checkbox" id="0.25" name="zero-twofive" value="0.25"><label for="0.25">0.25</label>
+                <input type="checkbox" id="0.5" name="zero-five" value="0.5"><label for="0.5">0.5</label>
+                <input type="checkbox" id="1" name="one" value="1"><label for="1">1</label>
+                <input type="checkbox" id="1.5" name="one-five" value="1.5"><label for="1.5">1.5</label>
+                <input type="checkbox" id="2" name="two" value="2"><label for="2">2</label>
+        
+                <li><p>Играли в промо акций от Coca-Cola? </p></li>
+                <input type="radio" id="yes-promo" name="promoAcc" value="1">Да<br>
+                <input type="radio" id="no-promo" name="promoAcc" value="0">Нет<br>
+        
+                <li><p>Если да то в какие предпочитаете? </p></li>
+                <input type="radio" name="promoAcc-size" value="2"><label for="big-promo">Большие призы за выпалненные условия, но меньше шанс выйгрыша</label><br>
+                <input type="radio" name="promoAcc-size" value="1"><label for="small-promo">Маленькие призы за выпалненные условия, но больше шанс выйгрыша</label>
+            </ul>
+        </div>
+        <div class="submit">
+            <input type="submit" value="отправить" >
+        </div>
+        
+    </form>
+    
+
+            
+    
+    
+</body>
+
+<style>
+    body{
+        margin: 0;
+        background: radial-gradient(113.79% 269.32% at 107.54% 35.16%, #7923D4 0%, #4023AC 49.38%, #5F23C7 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5%;
+    }
+
+    p{
+        font-size: 150%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        width: 60%;
+        height: 80%;
+    }
+    .form{
+        padding: 1% 0;
+        width: 95%;
+        height: auto;
+        background: white;
+        border-radius: 8px;
+    }
+    .submit{
+        display: flex;
+        justify-content: end;
+    }
+    .submit input{
+        background: #8E5DF6;
+        box-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 13px;
+        padding: 7px 10px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 0;
+    }
+    header{
+        height: 10%;
+        width: 100%;
+        display: flex;
+    }
+    header div:nth-child(1){
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    header div:nth-child(2){
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    header div:nth-child(2) a{
+        margin-right: 5%;
+    }
+
+    header div:nth-child(1) img{
+        height: 100%;
+    }
+    ul {
+        color: #27277A;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+
+        word-spacing: 2px;
+
+    }
+    li p{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+</style>
+
+</html>

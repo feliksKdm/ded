@@ -1,0 +1,10 @@
+id,Age,sex,played_inpromo,promo_size,prefer_CocaCola,prefer_CocaCola_Zero,prefer_Fanta,prefer_Sprite,prefer_Schweppes,prefer_Bonaqua,prefer_Fuse,liter_zero_twofive,liter_zero_five,liter_one,liter_one_five,liter_two
+1,18,male,1,1,1,,1.0,,,,,,,,,2.0
+2,17,female,0,1,1,,,,,,,,,1.0,,
+3,18,male,1,1,1,,,,,,,,,,1.5,
+4,18,female,1,1,1,,1.0,1.0,,,,,,,1.5,2.0
+5,17,male,1,1,1,,1.0,,,,,,,1.0,,2.0
+6,17,other,1,1,1,,,,,,,,,1.0,,
+7,18,male,0,1,1,,1.0,1.0,,,,,,1.0,1.5,2.0
+8,17,female,0,1,1,,,,,,,,,,1.5,
+9,17,female,0,1,1,,,,,,,,,,,2.0
